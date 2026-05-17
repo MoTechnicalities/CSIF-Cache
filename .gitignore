@@ -37,3 +37,6 @@ Thumbs.db
 # Local data
 *.json.bak
 *.crystal.bak
+
+# CSIF-Cache runtime artifacts
+.csif_cache/
