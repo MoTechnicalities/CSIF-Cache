@@ -60,18 +60,27 @@ python3 demo_cache.py
 
 ---
 
+
 ## Unique Demo: Semantic Metronome
 
-A one-of-a-kind, deterministic probability demo is provided:
+Two versions are provided for maximum accessibility:
 
-- **demo_deterministic_probability.py** — The "Semantic Metronome". Demonstrates phase-resonant, time-locked creative inference with bit-perfect reproducibility. See the script for a three-act, high-visibility terminal showcase.
+- **demo_deterministic_probability.py** — The original "Semantic Metronome". Demonstrates phase-resonant, time-locked creative inference with bit-perfect reproducibility. Three-act, high-visibility terminal showcase.
+- **demo_deterministic_probability_colab.py** — An easy-to-run, Google Colab-ready version. Clean, high-precision, and designed for instant execution in notebook or cloud environments. No dependencies beyond Python standard library.
 
 ---
 
-## Quickstart: Semantic Metronome Demo
+## Quickstart: Semantic Metronome Demos
 
+**Standard version:**
 ```bash
 python3 demo_deterministic_probability.py
+```
+
+**Colab/Notebook version:**
+```python
+# In a Colab or Jupyter cell:
+%run demo_deterministic_probability_colab.py
 ```
 
 - `PREFLIGHT_SHORT_CIRCUIT` for high-certainty coherent query
