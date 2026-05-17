@@ -58,6 +58,22 @@ python3 demo_cache.py
 
 ### Expected Routing Outcomes
 
+---
+
+## Unique Demo: Semantic Metronome
+
+A one-of-a-kind, deterministic probability demo is provided:
+
+- **demo_deterministic_probability.py** — The "Semantic Metronome". Demonstrates phase-resonant, time-locked creative inference with bit-perfect reproducibility. See the script for a three-act, high-visibility terminal showcase.
+
+---
+
+## Quickstart: Semantic Metronome Demo
+
+```bash
+python3 demo_deterministic_probability.py
+```
+
 - `PREFLIGHT_SHORT_CIRCUIT` for high-certainty coherent query
 - `CACHE_HIT` on repeated identical query
 - `DEEP_VALIDATION` when phase drift or uncertainty is high

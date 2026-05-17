@@ -1,3 +1,18 @@
+import datetime
+def iso_to_time_coordinate(iso_ts: str) -> float:
+    """
+    Convert ISO 8601 timestamp to a deterministic float time coordinate.
+    Uses seconds + fractional microseconds for high precision.
+    """
+    dt = datetime.datetime.fromisoformat(iso_ts.replace("Z", "+00:00"))
+    return dt.timestamp()
+
+def temporal_wave_phase(theta_0: float, sigma: float, t: float) -> float:
+    """
+    Deterministic temporal wave function for phase modulation.
+    theta(t) = theta_0 + sigma * sin(0.5 * t)
+    """
+    return wrap_pi(theta_0 + sigma * math.sin(0.5 * t))
 """
 Phase geometry primitives for CSIF-Sync
 Shared mathematical substrate with CSIF-Guard.
