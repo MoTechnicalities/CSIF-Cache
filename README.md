@@ -83,6 +83,28 @@ python3 demo_deterministic_probability.py
 %run demo_deterministic_probability_colab.py
 ```
 
+---
+
+## Rust Speed Prototype
+
+To demonstrate low-level performance potential, this repo includes a native Rust benchmark:
+
+- `rust/csif_phase_bench` - deterministic phase math microbench plus large resonance-scan benchmark.
+
+Run it in release mode:
+
+```bash
+cd rust/csif_phase_bench
+cargo run --release
+```
+
+Observed local results from this workspace run:
+
+- Microbench throughput: about 100.48 Mops/s (about 9.95 ns/op)
+- Resonance scan rate: about 515.10 million edges/s
+
+These numbers are practical evidence that CSIF phase geometry maps well to low-level systems programming and can scale far beyond interpreted Python baselines.
+
 - `PREFLIGHT_SHORT_CIRCUIT` for high-certainty coherent query
 - `CACHE_HIT` on repeated identical query
 - `DEEP_VALIDATION` when phase drift or uncertainty is high
